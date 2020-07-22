@@ -1,0 +1,37 @@
+body {
+    background-color: lightgreen;
+}
+
+button {
+    margin: 1rem;
+}
+
+.navbar-brand {
+    margin-right: 3rem;
+}
+
+#green {
+    color: #28a745; 
+}
+
+.card {
+    margin: .5rem;
+}
+
+.citylist {
+    float: left;
+    width: 16rem;
+    
+}
+
+.citydata {
+    float: left;
+    width: 75%;
+    margin-left: 2.25rem;
+}
+
+.forecast {
+    float: right;
+    margin:2rem;
+    width: 12rem;
+}

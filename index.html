@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel = "stylesheet" href = "style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark justify-content-between">
+        
+        <form class="form-inline">
+            <button id = "city" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search by city:</button>
+            <input id = "inputCity" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button id = "zip" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search by zip:</button>
+            <input id = "inputZip" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+        <h1 id = "green" class="navbar-brand">Weather Dashboard</h1>
+    </nav>
+
+    <br>
+
+    <div class="citylist">
+        <ul class="list-group list-group-flush"></ul>
+    </div>
+
+        <div class="citydata">
+            <div class="card-body">
+                <h2 id = "heading"></h2>
+                <p id = "tempFDisplay"></p>
+                <p id = "humidityDisplay"></p>
+                <p id = "windDisplay"></p>
+                <p id = "uviDisplay"></p>
+            </div>
+        </div>
+
+            <br>
+
+            <div class = "card-body forecast">
+                <p id = "date5"></p>
+                <p id = "iconDisplay5"></p>
+                <p id = "tempFDisplay5"></p>
+                <p id = "humidityDisplay5"></p>
+             
+            </div>
+           
+            <div class = "card-body forecast">
+                <p id = "date4"></p>
+                <p id = "iconDisplay4"></p>
+                <p id = "tempFDisplay4"></p>
+                <p id = "humidityDisplay4"></p>
+          
+            </div>
+
+            <div class = "card-body forecast">
+                <p id = "date3"></p>
+                <p id = "iconDisplay3"></p>
+                <p id = "tempFDisplay3"></p>
+                <p id = "humidityDisplay3"></p>
+             
+            </div>
+
+            <div class = "card-body forecast">
+                <p id = "date2"></p>
+                <p id = "iconDisplay2"></p>
+                <p id = "tempFDisplay2"></p>
+                <p id = "humidityDisplay2"></p>
+       
+            </div>
+
+            <div class = "card-body forecast">
+                <p id = "date1"></p>
+                <p id = "iconDisplay1"></p>
+                <p id = "tempFDisplay1"></p>
+                <p id = "humidityDisplay1"></p>
+     
+            </div>
+    
+
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src = "script.js"></script>
+    
+
+
+</body>
+
+</html>
