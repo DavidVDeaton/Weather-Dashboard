@@ -23,7 +23,6 @@ button {
     float: left;
     width: 16rem;
     margin-left: .5rem;
-        
 }
 
 .citydata {
@@ -53,7 +52,10 @@ button {
 
 .forecast {
     margin:1rem;
-    min-width: 10rem;
-    max-width: 20rem;
     padding:.25rem;
+}
+
+img {
+    height: 90px;
+    width: 90px;
 }

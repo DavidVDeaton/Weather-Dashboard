@@ -35,13 +35,20 @@
         $("#date5").text(day5);
 
             var city2 = response.name;
+           
+            
+
+          
 
             $("#heading").text(city2 + " (" + today + ")");
 
             var list = $("<li>").text(city2).addClass("list-group-item");
             $("ul").prepend(list);
 
-                       
+            var icon0 = JSON.stringify(response.weather[0].icon).slice(1,4);
+
+            $("#icon").attr("src", "http://openweathermap.org/img/wn/" + icon0 + "@2x.png");    
+
             var lat = response.coord.lat;
 
             var lon = response.coord.lon;
@@ -78,6 +85,8 @@
                 $("#tempFDisplay1").text(tempF1);
                 var hum1 = "Humidity: " + response5.daily[1].humidity + "%";
                 $("#humidityDisplay1").text(hum1);
+                var icon1 = JSON.stringify(response5.daily[1].weather[0].icon).slice(1,4);
+                $("#iconDisplay1").attr("src", "http://openweathermap.org/img/wn/" + icon1 + "@2x.png");
 
                 // Day 2
                 var tempK2 = response5.daily[2].temp.day;
@@ -85,6 +94,8 @@
                 $("#tempFDisplay2").text(tempF2);
                 var hum2 = "Humidity: " + response5.daily[2].humidity + "%";
                 $("#humidityDisplay2").text(hum2);
+                var icon2 = JSON.stringify(response5.daily[2].weather[0].icon).slice(1,4);
+                $("#iconDisplay2").attr("src", "http://openweathermap.org/img/wn/" + icon2 + "@2x.png");
 
                 // Day 3
                 var tempK3 = response5.daily[3].temp.day;
@@ -92,6 +103,8 @@
                 $("#tempFDisplay3").text(tempF3);
                 var hum3 = "Humidity: " + response5.daily[3].humidity + "%";
                 $("#humidityDisplay3").text(hum3);
+                var icon3 = JSON.stringify(response5.daily[3].weather[0].icon).slice(1,4);
+                $("#iconDisplay3").attr("src", "http://openweathermap.org/img/wn/" + icon3 + "@2x.png");
 
                 // Day 4
                 var tempK4 = response5.daily[4].temp.day;
@@ -99,6 +112,8 @@
                 $("#tempFDisplay4").text(tempF4);
                 var hum4 = "Humidity: " + response5.daily[4].humidity + "%";
                 $("#humidityDisplay4").text(hum4);
+                var icon4 = JSON.stringify(response5.daily[4].weather[0].icon).slice(1,4);
+                $("#iconDisplay4").attr("src", "http://openweathermap.org/img/wn/" + icon4 + "@2x.png");
 
                 // Day 5
                 var tempK5 = response5.daily[5].temp.day;
@@ -106,6 +121,8 @@
                 $("#tempFDisplay5").text(tempF5);
                 var hum5 = "Humidity: " + response5.daily[5].humidity + "%";
                 $("#humidityDisplay5").text(hum5);
+                var icon5 = JSON.stringify(response5.daily[5].weather[0].icon).slice(1,4);
+                $("#iconDisplay5").attr("src", "http://openweathermap.org/img/wn/" + icon5 + "@2x.png");
 
                 console.log(tempF1);
                 console.log(hum1);
@@ -117,6 +134,7 @@
                 console.log(hum4);
                 console.log(tempF5);
                 console.log(hum5);
+                console.log(response5)
 
                 console.log(tempF);
                 console.log(humidity);
@@ -166,6 +184,10 @@
                 
                 localStorage.setItem("prevSearch", city2);
 
+                var icon0 = JSON.stringify(response.weather[0].icon).slice(1,4);
+
+                $("#icon").attr("src", "http://openweathermap.org/img/wn/" + icon0 + "@2x.png"); 
+
                 var lat = response.coord.lat
 
                 var lon = response.coord.lon
@@ -204,9 +226,10 @@
                     var tempK1 = response5.daily[1].temp.day;
                     var tempF1 = "Temp: " + ((tempK1 - 273.15)*(9/5)+32).toFixed(1) + "\u00B0F";
                     $("#tempFDisplay1").text(tempF1);
-                    
                     var hum1 = "Humidity: " + response5.daily[1].humidity + "%";
                     $("#humidityDisplay1").text(hum1);
+                    var icon1 = JSON.stringify(response5.daily[1].weather[0].icon).slice(1,4);
+                    $("#iconDisplay1").attr("src", "http://openweathermap.org/img/wn/" + icon1 + "@2x.png");
     
                     // Day 2
                     var tempK2 = response5.daily[2].temp.day;
@@ -214,6 +237,9 @@
                     $("#tempFDisplay2").text(tempF2);
                     var hum2 = "Humidity: " + response5.daily[2].humidity + "%";
                     $("#humidityDisplay2").text(hum2);
+                    var icon2 = JSON.stringify(response5.daily[2].weather[0].icon).slice(1,4);
+                    $("#iconDisplay2").attr("src", "http://openweathermap.org/img/wn/" + icon2 + "@2x.png");
+
     
                     // Day 3
                     var tempK3 = response5.daily[3].temp.day;
@@ -221,6 +247,8 @@
                     $("#tempFDisplay3").text(tempF3);
                     var hum3 = "Humidity: " + response5.daily[3].humidity + "%";
                     $("#humidityDisplay3").text(hum3);
+                    var icon3 = JSON.stringify(response5.daily[3].weather[0].icon).slice(1,4);
+                    $("#iconDisplay3").attr("src", "http://openweathermap.org/img/wn/" + icon3 + "@2x.png");
     
                     // Day 4
                     var tempK4 = response5.daily[4].temp.day;
@@ -228,6 +256,8 @@
                     $("#tempFDisplay4").text(tempF4);
                     var hum4 = "Humidity: " + response5.daily[4].humidity + "%";
                     $("#humidityDisplay4").text(hum4);
+                    var icon4 = JSON.stringify(response5.daily[4].weather[0].icon).slice(1,4);
+                    $("#iconDisplay4").attr("src", "http://openweathermap.org/img/wn/" + icon4 + "@2x.png");
     
                     // Day 5
                     var tempK5 = response5.daily[5].temp.day;
@@ -235,6 +265,8 @@
                     $("#tempFDisplay5").text(tempF5);
                     var hum5 = "Humidity: " + response5.daily[5].humidity + "%";
                     $("#humidityDisplay5").text(hum5);
+                    var icon5 = JSON.stringify(response5.daily[5].weather[0].icon).slice(1,4);
+                    $("#iconDisplay5").attr("src", "http://openweathermap.org/img/wn/" + icon5 + "@2x.png");
     
                     console.log(tempF1);
                     console.log(hum1);
@@ -297,7 +329,9 @@
 
             localStorage.setItem("prevSearch", city2);
                 
-            
+            var icon0 = JSON.stringify(response.weather[0].icon).slice(1,4);
+
+            $("#icon").attr("src", "http://openweathermap.org/img/wn/" + icon0 + "@2x.png"); 
 
             var lat = response.coord.lat;
 
@@ -335,6 +369,8 @@
                 $("#tempFDisplay1").text(tempF1);
                 var hum1 = "Humidity: " + response5.daily[1].humidity + "%";
                 $("#humidityDisplay1").text(hum1);
+                var icon1 = JSON.stringify(response5.daily[1].weather[0].icon).slice(1,4);
+                $("#iconDisplay1").attr("src", "http://openweathermap.org/img/wn/" + icon1 + "@2x.png");
 
                 // Day 2
                 var tempK2 = response5.daily[2].temp.day;
@@ -342,6 +378,8 @@
                 $("#tempFDisplay2").text(tempF2);
                 var hum2 = "Humidity: " + response5.daily[2].humidity + "%";
                 $("#humidityDisplay2").text(hum2);
+                var icon2 = JSON.stringify(response5.daily[2].weather[0].icon).slice(1,4);
+                $("#iconDisplay2").attr("src", "http://openweathermap.org/img/wn/" + icon2 + "@2x.png");
 
                 // Day 3
                 var tempK3 = response5.daily[3].temp.day;
@@ -349,6 +387,8 @@
                 $("#tempFDisplay3").text(tempF3);
                 var hum3 = "Humidity: " + response5.daily[3].humidity + "%";
                 $("#humidityDisplay3").text(hum3);
+                var icon3 = JSON.stringify(response5.daily[3].weather[0].icon).slice(1,4);
+                $("#iconDisplay3").attr("src", "http://openweathermap.org/img/wn/" + icon3 + "@2x.png");
 
                 // Day 4
                 var tempK4 = response5.daily[4].temp.day;
@@ -356,6 +396,8 @@
                 $("#tempFDisplay4").text(tempF4);
                 var hum4 = "Humidity: " + response5.daily[4].humidity + "%";
                 $("#humidityDisplay4").text(hum4);
+                var icon4 = JSON.stringify(response5.daily[4].weather[0].icon).slice(1,4);
+                $("#iconDisplay4").attr("src", "http://openweathermap.org/img/wn/" + icon4 + "@2x.png");
 
                 // Day 5
                 var tempK5 = response5.daily[5].temp.day;
@@ -363,6 +405,8 @@
                 $("#tempFDisplay5").text(tempF5);
                 var hum5 = "Humidity: " + response5.daily[5].humidity + "%";
                 $("#humidityDisplay5").text(hum5);
+                var icon5 = JSON.stringify(response5.daily[5].weather[0].icon).slice(1,4);
+                $("#iconDisplay5").attr("src", "http://openweathermap.org/img/wn/" + icon5 + "@2x.png");
 
                 console.log(tempF1);
                 console.log(hum1);
