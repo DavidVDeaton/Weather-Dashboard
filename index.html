@@ -9,9 +9,8 @@
   <link rel = "stylesheet" href = "style.css">
 </head>
 
-<body>
+<body>        
     <nav class="navbar navbar-dark bg-dark justify-content-between">
-        
         <form class="form-inline">
             <button id = "city" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search by city:</button>
             <input id = "inputCity" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -19,7 +18,7 @@
             <input id = "inputZip" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         </form>
         <h1 id = "green" class="navbar-brand">Weather Dashboard</h1>
-    </nav>
+    </nav> 
 
     <br>
 
@@ -27,32 +26,37 @@
         <ul class="list-group list-group-flush"></ul>
     </div>
 
-        <div class="citydata">
-            <div class="card-body">
-                <h2 id = "heading"></h2>
-                <p id = "tempFDisplay"></p>
-                <p id = "humidityDisplay"></p>
-                <p id = "windDisplay"></p>
-                <p id = "uviDisplay"></p>
+    <div class = "wrapper">
+
+        <div class = "flex-container">
+            <div class="citydata">
+                <div class="card-body">
+                    <h2 id = "heading"></h2>
+                    <p id = "tempFDisplay"></p>
+                    <p id = "humidityDisplay"></p>
+                    <p id = "windDisplay"></p>
+                    <p id = "uviDisplay"></p>
+                </div>
             </div>
-        </div>
 
             <br>
 
-            <div class = "card-body forecast">
-                <p id = "date5"></p>
-                <p id = "iconDisplay5"></p>
-                <p id = "tempFDisplay5"></p>
-                <p id = "humidityDisplay5"></p>
-             
+            <div class = "forecastdata">
+                <h3>~5 Day Forecast~</h3>
             </div>
-           
+            
             <div class = "card-body forecast">
-                <p id = "date4"></p>
-                <p id = "iconDisplay4"></p>
-                <p id = "tempFDisplay4"></p>
-                <p id = "humidityDisplay4"></p>
-          
+                <p id = "date1"></p>
+                <p id = "iconDisplay1"></p>
+                <p id = "tempFDisplay1"></p>
+                <p id = "humidityDisplay1"></p>
+            </div>      
+
+            <div class = "card-body forecast">
+                <p id = "date2"></p>
+                <p id = "iconDisplay2"></p>
+                <p id = "tempFDisplay2"></p>
+                <p id = "humidityDisplay2"></p>
             </div>
 
             <div class = "card-body forecast">
@@ -60,24 +64,25 @@
                 <p id = "iconDisplay3"></p>
                 <p id = "tempFDisplay3"></p>
                 <p id = "humidityDisplay3"></p>
-             
             </div>
 
             <div class = "card-body forecast">
-                <p id = "date2"></p>
-                <p id = "iconDisplay2"></p>
-                <p id = "tempFDisplay2"></p>
-                <p id = "humidityDisplay2"></p>
-       
+                <p id = "date4"></p>
+                <p id = "iconDisplay4"></p>
+                <p id = "tempFDisplay4"></p>
+                <p id = "humidityDisplay4"></p>
+            </div>
+            
+            <div class = "card-body forecast">
+                <p id = "date5"></p>
+                <p id = "iconDisplay5"></p>
+                <p id = "tempFDisplay5"></p>
+                <p id = "humidityDisplay5"></p>
             </div>
 
-            <div class = "card-body forecast">
-                <p id = "date1"></p>
-                <p id = "iconDisplay1"></p>
-                <p id = "tempFDisplay1"></p>
-                <p id = "humidityDisplay1"></p>
-     
-            </div>
+        </div>
+
+    </div>
     
 
     

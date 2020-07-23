@@ -14,24 +14,46 @@ button {
     color: #28a745; 
 }
 
-.card {
+.wrapper {
+    flex-wrap: wrap;
     margin: .5rem;
 }
 
 .citylist {
     float: left;
     width: 16rem;
-    
+    margin-left: .5rem;
+        
 }
 
 .citydata {
-    float: left;
-    width: 75%;
-    margin-left: 2.25rem;
+    width: 100%;
+    min-width: 20rem;
+    margin-left: 1.75rem;
+    margin-right: 1.75rem;
+}
+
+.forecastdata {
+    width: 100%;
+    margin-left: 1.75rem;
+    margin-right: 1.75rem;
+    align-content: center;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-self: center;
+    align-items: baseline;
+
 }
 
 .forecast {
-    float: right;
-    margin:2rem;
-    width: 12rem;
+    margin:1rem;
+    min-width: 10rem;
+    max-width: 20rem;
+    padding:.25rem;
 }
