@@ -1,9 +1,5 @@
 # Weather Dashboard
 
-Weather Dashboard Screenshot:
-
-![weather dashboard](weatherdashboard.PNG?raw=true)
-
 # Table of contents
 - [Project Name](#project-name)
 - [Table of contents](#table-of-contents)
