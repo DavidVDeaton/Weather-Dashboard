@@ -39,7 +39,9 @@ function weather() {
         $("#icon").attr("src", "http://openweathermap.org/img/wn/" + icon0 + "@2x.png");    
 
         var lat = response.coord.lat;
+        console.log(lat);
         var lon = response.coord.lon;
+        console.log(lon);
 
         var queryURLCity5 = "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&exclude=minutely,hourly,&appid=2e8607b62456c51a7a708a2c72eaa6bf";
 
